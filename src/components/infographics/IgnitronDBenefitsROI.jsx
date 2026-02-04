@@ -19,7 +19,7 @@ const IgnitronDBenefitsROI = () => {
     },
     {
       title: 'Engine Protection',
-      value: 'Up to 25%',
+      value: 'Extended',
       detail: 'Improved heat management and injector cleanliness',
       icon: Shield,
       color: 'blue'
@@ -141,7 +141,7 @@ const IgnitronDBenefitsROI = () => {
               <div className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-3">
                 {item.metric}
               </div>
-              <div className={`${item.value.length > 10 ? 'text-2xl' : 'text-4xl'} font-black text-blue-600 mb-2`}>
+              <div className={`font-black text-blue-600 mb-2 ${item.value.length > 6 ? 'text-2xl' : 'text-4xl'}`}>
                 {item.value}
               </div>
               <div className="text-xs text-stone-500">{item.context}</div>
@@ -168,7 +168,7 @@ const IgnitronDBenefitsROI = () => {
               <div className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-3">
                 {item.pollutant}
               </div>
-              <div className="text-4xl font-black text-emerald-600 mb-2">
+              <div className={`font-black text-emerald-600 mb-2 ${item.value.length > 6 ? 'text-2xl' : 'text-4xl'}`}>
                 ↓ {item.value}
               </div>
               <div className="text-xs text-stone-500">{item.detail}</div>

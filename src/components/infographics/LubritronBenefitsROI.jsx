@@ -18,7 +18,7 @@ const LubritronBenefitsROI = () => {
       color: 'emerald'
     },
     {
-      title: 'Oil Life',
+      title: 'Engine life',
       value: 'Extended',
       detail: 'Reduced oil change frequency and maintenance',
       icon: Clock,
@@ -69,7 +69,7 @@ const LubritronBenefitsROI = () => {
   const costComparison = [
     { category: 'Fuel Costs', without: '100%', with: '94%', savings: '6%' },
     { category: 'Maintenance', without: '100%', with: '~75%', savings: '~25%' },
-    { category: 'Oil Life', without: 'Standard', with: 'Extended', savings: 'Extended' }
+    { category: 'Engine life', without: 'Standard', with: 'Extended', savings: 'Extended' }
   ];
 
   return (
@@ -140,7 +140,7 @@ const LubritronBenefitsROI = () => {
               <div className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-3">
                 {item.pollutant}
               </div>
-              <div className="text-4xl font-black text-emerald-600 mb-2">
+              <div className={`font-black text-emerald-600 mb-2 ${item.value.length > 6 ? 'text-2xl' : 'text-4xl'}`}>
                 ↓ {item.value}
               </div>
               <div className="text-xs text-stone-500">{item.detail}</div>

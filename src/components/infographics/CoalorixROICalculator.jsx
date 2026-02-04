@@ -7,7 +7,7 @@ export default function CoalorixROICalculator() {
   const [inputs, setInputs] = useState({
     dailyCoalConsumption: 8000,
     coalCost: 3000,
-    savingsPercent: 15,
+    savingsPercent: 9,
     capexInvestment: 200, // Fixed at ₹2 Cr
     treatmentCostPerTon: 220
   })
@@ -67,7 +67,7 @@ export default function CoalorixROICalculator() {
     setInputs({
       dailyCoalConsumption: 8000,
       coalCost: 3000,
-      savingsPercent: 15,
+      savingsPercent: 9,
       capexInvestment: 200, // Fixed at ₹2 Cr
       treatmentCostPerTon: 220
     })
@@ -297,6 +297,7 @@ export default function CoalorixROICalculator() {
           Environmental Impact (Annual)
         </h3>
         <div className="grid md:grid-cols-2 gap-4">
+
           <div className="text-center p-4 bg-white border border-stone-200 rounded-lg">
             <div className="text-3xl mb-2">🔥</div>
             <div className="text-2xl font-bold text-black">

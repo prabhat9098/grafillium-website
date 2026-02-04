@@ -25,8 +25,8 @@ const CoalorixTechnicalSpecs = () => {
   ];
 
   const performanceMetrics = [
-    { metric: 'Coal Savings', range: '3-15%', typical: '12-15%', icon: Factory },
-    { metric: 'Efficiency Gain', range: '5-10%', typical: '7%', icon: Gauge },
+    { metric: 'Coal Savings', range: '6-15%', typical: '9%', icon: Factory },
+    { metric: 'Efficiency Gain', range: '6-15%', typical: '9%', icon: Gauge },
     { metric: 'PM Reduction', range: '20-35%', typical: '30%', icon: Wind },
     { metric: 'CO Reduction', range: '15-30%', typical: '25%', icon: Droplets }
   ];
@@ -53,8 +53,6 @@ const CoalorixTechnicalSpecs = () => {
   ];
 
   const safetyCompliance = [
-    'NABL certified lab testing',
-    'ASTM testing protocols',
     'Non-toxic formulation',
     'No harmful residues',
     'Compatible with existing pollution control systems (ESP, Baghouse, FGD)',
@@ -138,10 +136,10 @@ const CoalorixTechnicalSpecs = () => {
           </div>
           <div className="font-mono text-sm text-stone-700 bg-stone-50 p-4 rounded border border-stone-200">
             <div className="mb-2">
-              <span className="text-orange-600 font-bold">Dosage Required (kg/day)</span> = Coal Consumption (tonnes/day) × Dosage Rate (ppm) / 1000
+              <span className="text-orange-600 font-bold">Dosage Required (kg/day)</span> = Coal Consumption (tons/day) × Dosage Rate (ppm) / 1000
             </div>
             <div className="text-xs text-stone-500 mt-3 pt-3 border-t border-stone-200">
-              Example: 4,000 tonnes/day × 1,000 ppm / 1000 = <span className="font-bold text-orange-600">4,000 kg/day (4 tonnes/day)</span>
+              Example: 4,000 tons/day × 1,000 ppm / 1000 = <span className="font-bold text-orange-600">4,000 kg/day (4 tons/day)</span>
             </div>
           </div>
         </div>

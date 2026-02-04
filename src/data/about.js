@@ -1,12 +1,15 @@
 import VievekImage from '../assets/Vievek.jpeg';
 import VikasImage from '../assets/Vikas.jpeg';
+import VinodImage from '../assets/Vinod Jain.jpeg';
 
 export const aboutContent = {
     hero: {
         title: "About Grafillium",
         tagline: "A visionary global impact initiative co-created with the Founders of Magppie & Sunrooof for better tomorrow",
-        quote: "Innovating today to inherit tomorrow's Earth.",
-        quoteAuthor: "Founders",
+        quote: {
+            text: "Innovating today to inherit tomorrow's Earth.",
+            author: "Founders"
+        },
         mission: "Accelerating India’s transition toward cleaner, smarter, and self-reliant technologies through world-class research and industrial execution."
     },
     overview: {
@@ -128,9 +131,48 @@ export const aboutContent = {
         { year: "2027+", phase: "Growth", details: "Full commercial launch, Geographic expansion, Global market entry." }
     ],
     founders: {
-        title: "Founder Profiles",
+        title: "Founders Profiles",
         description: "Meet the visionary leaders driving innovation and sustainability at Grafillium",
         team: [
+            {
+                name: "Vinod Jain",
+                title: "Co-Founder",
+                subtitle: "Chief Branding and Strategy Officer",
+                experience: "35+ years",
+                bio: "Vinod Jain is the visionary founder behind Magppie, a brand that revolutionized the Indian market by transforming steel into a premium lifestyle product. With a career dedicated to design excellence and innovation, he introduced high-end steel accessories, concept kitchens, and interiors to India, establishing a global footprint across 35 countries.",
+                background: "A three-time recipient of the prestigious Red Dot International Design Award, Vinod has a proven track record of blending craftsmanship with modern technology. Beyond Magppie, he is a social entrepreneur who co-founded the 'Satvic Movement' and established advanced R&D laboratories in Germany and India, focusing on pioneering wellness and industrial innovations.",
+                leadership: "At Grafillium, Vinod leads the brand identity and long-term strategic roadmap. His expertise in elevating utility products into design-led lifestyle categories ensures that Grafillium's breakthrough technologies are positioned for maximum global impact. He brings a unique perspective on bridging the gap between frontier science and consumer-centric branding.",
+                education: "Advanced Design Studies - Germany | Strategy & Branding Expert",
+                expertise: [
+                    "Global Branding & Strategy",
+                    "Lifestyle Product Innovation",
+                    "International Market Expansion",
+                    "Design Thinking & R&D",
+                    "Wellness Technology"
+                ],
+                linkedin: "",
+                image: VinodImage,
+                placeholder: false
+            },
+            {
+                name: "Vikas Jain",
+                title: "Co-Founder",
+                subtitle: "Chief Executive and Manufacturing Officer",
+                experience: "25+ years",
+                bio: "With over 25 years of global experience spanning Australia, China, Italy, Germany, and India, Vikas Jain is a visionary entrepreneur and strategist with an extensive background in manufacturing, business strategy, and sustainable engineering. His expertise lies in leveraging cross-industry knowledge to develop innovative, high-impact solutions that drive environmental sustainability.",
+                background: "As the Co-founder, Vikas is at the forefront of deeptech-driven environmental solutions, breaking barriers across industries to tackle some of the world's most pressing challenges. He believes that \"Nothing is impossible\" a philosophy that has fueled his success in pioneering disruptive technologies and implementing transformative business strategies.",
+                leadership: "Vikas holds a Lean Manufacturing Management certification from Monash University, Melbourne, equipping him with a sharp analytical approach to optimizing production efficiency and sustainability. His current focus is on revolutionizing plume capture technologies and exploring the potential of clean nuclear energy to shape a greener future.",
+                education: "Lean Manufacturing Management - Monash University, Melbourne",
+                expertise: [
+                    "Manufacturing & Operations",
+                    "Sustainable Engineering",
+                    "Plume Capture Technologies",
+                    "Clean Energy Solutions"
+                ],
+                linkedin: "",
+                image: VikasImage,
+                placeholder: false
+            },
             {
                 name: "Vievek Jain",
                 title: "Co-Founder",
@@ -152,42 +194,21 @@ export const aboutContent = {
                 placeholder: false
             },
             {
-                name: "Vikas Jain",
-                title: "Co-Founder",
-                subtitle: "CEO & Chief Manufacturing Officer",
-                experience: "25+ years",
-                bio: "With over 25 years of global experience spanning Australia, China, Italy, Germany, and India, Vikas Jain is a visionary entrepreneur and strategist with an extensive background in manufacturing, business strategy, and sustainable engineering. His expertise lies in leveraging cross-industry knowledge to develop innovative, high-impact solutions that drive environmental sustainability.",
-                background: "As the Co-founder of Aquamax, Vikas is at the forefront of deeptech-driven environmental solutions, breaking barriers across industries to tackle some of the world's most pressing challenges. He believes that \"Nothing is impossible\". a philosophy that has fueled his success in pioneering disruptive technologies and implementing transformative business strategies.",
-                leadership: "Vikas holds a Lean Manufacturing Management certification from Monash University, Melbourne, equipping him with a sharp analytical approach to optimizing production efficiency and sustainability. His current focus is on revolutionizing plume capture technologies and exploring the potential of clean nuclear energy to shape a greener future.",
-                education: "Lean Manufacturing Management - Monash University, Melbourne",
-                expertise: [
-                    "Manufacturing & Operations",
-                    "Sustainable Engineering",
-                    "Deeptech Innovation",
-                    "Plume Capture Technologies",
-                    "Clean Energy Solutions"
-                ],
-                linkedin: "",
-                companies: "Aquamax | Grafillium",
-                image: VikasImage,
-                placeholder: false
-            },
-            {
                 name: "Ishat Jain",
                 title: "Co-Founder",
-                subtitle: "Business Operations & Digital Growth",
+                subtitle: "Chief Business Development Officer",
                 experience: "5+ years",
-                bio: "At 22 Ishat Jain is a visionary serial entrepreneur who has redefined industrial and consumer spaces through breakthrough technology. Choosing to transition from formal schooling to professional entrepreneurship at age 13 Ishat has developed a hands-on expertise in building and scaling ventures that bridge the gap between frontier science and human wellness. His journey is marked by a deep seated belief in self-directed learning and a relentless pursuit of solving impossible challenges through innovation.",
-                background: "Ishat is the founder of SUNROOOF a subsidiary of the renowned Magppie Group where he dedicated three years to nanotechnology research and engineering collaboration to create a lighting system that replicates natural sunlight. Under his leadership SUNROOOF scaled from zero to ₹50 crores in revenue within months of its launch managing a team of 60+ professionals across manufacturing and operations. His diverse portfolio includes ventures in premium lighting architecture and digital first businesses all focused on high growth market disruption.",
-                leadership: "At Grafillium Ishat leads Business Operations and Digital Growth. He leverages his proven expertise in AI driven sales automation having managed systems handling over 10,000 inquiries and high impact digital marketing with over 30M+ organic impressions. His leadership philosophy at Grafillium centers on data driven execution and building high performance teams to ensure rapid market penetration for the company's next-generation industrial additives.",
+                bio: "At 22, Ishat Jain is a serial entrepreneur and the visionary founder of SUNROOOF who has built and scaled multiple ventures from the ground up. Influenced by a non-traditional educational path since age 13, Ishat has developed a hands-on expertise in marketing, brand positioning, and disruptive innovation, specializing in the intersection of nanotechnology and wellness design.",
+                background: "Ishat's leadership is highlighted by the success of SUNROOOF (a subsidiary of the MAGPPIE Group), where he pioneered virtual sunlight technology. After three years of nanotechnology research and establishing a 70,000 sq. ft. manufacturing facility, he scaled the company to ₹50 crores in revenue by 2025, serving high-profile clients like Shilpa Shetty and JW Marriott. His diverse portfolio also includes ventures in premium lighting (Ombre), glass house construction (Uncovered), and vegan smoothie concepts (Bekynd).",
+                leadership: "At Grafillium, Ishat brings a data-driven, execution-focused approach to scaling operations and building high-performance teams. His expertise in organic lead generation (hundreds of daily inquiries), AI-driven sales automation (managing 10,000+ inquiries), and digital marketing (30M+ impressions) positions Grafillium for rapid market penetration. Ishat's leadership philosophy centers on hiring for attitude and cultural fit, transparent communication, and continuous improvement through structured performance frameworks.",
                 education: "Alternative Entrepreneurship Curriculum (Self-Directed Learning)",
                 expertise: [
                     "Business Operations & Scaling",
-                    "Team Building & Leadership",
+                    "Nanotechnology & R&D",
+                    "Circadian Lighting Systems",
                     "Digital Marketing & Growth",
                     "Sales Automation & AI",
-                    "Strategic Partnerships",
-                    "Performance Management"
+                    "Strategic Partnerships"
                 ],
                 linkedin: "https://in.linkedin.com/in/ishat-jain-59786923b",
                 image: "/images/profiles/Ishat.webp",

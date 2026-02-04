@@ -14,7 +14,7 @@ const About = () => {
         { id: 'brands', label: 'Our Brands', icon: Package },
         { id: 'competencies', label: 'Core Competencies', icon: Layers },
         { id: 'vision', label: 'Vision 2030', icon: TrendingUp },
-        { id: 'founders', label: 'Founder Profiles', icon: Users },
+        { id: 'founders', label: 'Founders Profiles', icon: Users },
     ];
 
     return (
@@ -32,16 +32,16 @@ const About = () => {
                         </h1>
                     </div>
                     <div className="lg:col-span-3">
-                        <p className="text-xl md:text-2xl font-medium leading-relaxed text-stone-500 max-w-2xl">
+                        <p className="text-xl md:text-2xl font-medium leading-relaxed text-stone-500 max-w-2xl mb-8">
                             {aboutContent.hero.tagline}
                         </p>
                         {aboutContent.hero.quote && (
-                            <div className="mt-10 pt-10 border-t border-stone-100">
-                                <p className="text-2xl md:text-3xl font-medium italic text-black leading-tight mb-4 max-w-2xl">
-                                    "{aboutContent.hero.quote}"
+                            <div className="border-l-4 border-black pl-6 py-2">
+                                <p className="text-2xl font-bold tracking-tight mb-1">
+                                    "{aboutContent.hero.quote.text}"
                                 </p>
                                 <p className="text-sm font-bold uppercase tracking-widest text-stone-400">
-                                    — {aboutContent.hero.quoteAuthor}
+                                    — {aboutContent.hero.quote.author}
                                 </p>
                             </div>
                         )}
@@ -340,7 +340,7 @@ const About = () => {
                                                                     <img
                                                                         src={founder.image}
                                                                         alt={founder.name}
-                                                                        className="w-full h-full object-cover"
+                                                                        className={`w-full h-full object-cover ${founder.name.includes('Vikas') || founder.name.includes('Vievek') ? 'grayscale' : ''}`}
                                                                     />
                                                                 ) : (
                                                                     <Users size={80} className={`${founder.placeholder ? 'text-stone-400' : 'text-stone-500'

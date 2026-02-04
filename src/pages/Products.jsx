@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link, useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Gauge, FlaskConical, Beaker, Layers, Filter, Building2, Ship, Construction, Droplet } from 'lucide-react';
-import { productsContent } from '../data/products';
+import { productsContent, productsHero } from '../data/products';
 
 const Products = () => {
     const [searchParams] = useSearchParams();
@@ -82,11 +82,24 @@ const Products = () => {
                             </div>
 
                             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none mb-6">
-                                Products & Solutions
+                                {productsHero.title}
                             </h1>
 
-                            <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-3xl mb-12">
-                                Nano-engineered additives delivering 3-20% efficiency gains across power, transport, and industrial sectors. Zero infrastructure changes. Immediate impact.
+                            <p className="text-xl md:text-2xl text-white/50 leading-tight max-w-3xl mb-4 italic">
+                                {productsHero.tagline}
+                            </p>
+
+                            <div className="border-l-4 border-teal-500 pl-6 py-2 mb-10 bg-white/5 backdrop-blur-sm">
+                                <p className="text-2xl font-bold tracking-tight mb-1">
+                                    "{productsHero.quote.text}"
+                                </p>
+                                <p className="text-sm font-bold uppercase tracking-widest text-white/40">
+                                    — {productsHero.quote.author}
+                                </p>
+                            </div>
+
+                            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-3xl mb-12 font-medium">
+                                {productsHero.description}
                             </p>
 
                             {/* Brand Distinction */}
@@ -119,8 +132,8 @@ const Products = () => {
                                     key={filter.id}
                                     onClick={() => setActiveFilter(filter.id)}
                                     className={`px-6 py-3 font-bold text-sm uppercase tracking-widest transition-all rounded-lg ${activeFilter === filter.id
-                                            ? 'bg-black text-white'
-                                            : 'bg-white text-slate-600 border border-slate-200 hover:border-black'
+                                        ? 'bg-black text-white'
+                                        : 'bg-white text-slate-600 border border-slate-200 hover:border-black'
                                         }`}
                                 >
                                     {filter.label} <span className="ml-2 text-xs opacity-60">({filter.count})</span>
@@ -251,8 +264,8 @@ const Products = () => {
                                                 {getPipelineIcon(item.sector)}
                                             </div>
                                             <span className={`px-2 py-1 text-[9px] font-bold uppercase tracking-widest rounded-full ${item.brand?.includes('Nexerg')
-                                                    ? 'bg-blue-500/20 text-blue-300'
-                                                    : 'bg-teal-500/20 text-teal-300'
+                                                ? 'bg-blue-500/20 text-blue-300'
+                                                : 'bg-teal-500/20 text-teal-300'
                                                 }`}>
                                                 {item.brand}
                                             </span>

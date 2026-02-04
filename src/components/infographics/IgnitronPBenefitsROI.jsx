@@ -18,7 +18,7 @@ const IgnitronPBenefitsROI = () => {
       color: 'emerald'
     },
     {
-      title: 'Engine life',
+      title: 'Engine Health',
       value: 'Extended',
       detail: 'Smoother operation, reduced knocking',
       icon: Shield,
@@ -76,7 +76,7 @@ const IgnitronPBenefitsROI = () => {
   const performanceMetrics = [
     { metric: 'Mixed Driving', value: '4-7%', context: 'Typical conditions' },
     { metric: 'Highway Driving', value: 'Up to 10%', context: 'Optimized conditions' },
-    { metric: 'Engine Smoothness', value: 'Enhanced', context: 'Reduced knocking' }
+    { metric: 'Engine Smoothness', value: 'Extended', context: 'Reduced knocking' }
   ];
 
   return (
@@ -141,7 +141,7 @@ const IgnitronPBenefitsROI = () => {
               <div className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-3">
                 {item.metric}
               </div>
-              <div className="text-4xl font-black text-purple-600 mb-2">
+              <div className={`font-black text-purple-600 mb-2 ${item.value.length > 6 ? 'text-2xl' : 'text-4xl'}`}>
                 {item.value}
               </div>
               <div className="text-xs text-stone-500">{item.context}</div>
@@ -168,7 +168,7 @@ const IgnitronPBenefitsROI = () => {
               <div className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-3">
                 {item.pollutant}
               </div>
-              <div className="text-4xl font-black text-emerald-600 mb-2">
+              <div className={`font-black text-emerald-600 mb-2 ${item.value.length > 6 ? 'text-2xl' : 'text-4xl'}`}>
                 ↓ {item.value}
               </div>
               <div className="text-xs text-stone-500">{item.detail}</div>

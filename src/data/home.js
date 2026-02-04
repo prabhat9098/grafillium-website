@@ -3,7 +3,11 @@ import { BarChart3, FlaskConical, Globe2, Layers, Leaf, Zap } from "lucide-react
 export const homeContent = {
     hero: {
         headline: "Engineering the Future of Innovations",
-        subheadline: "Converging breakthrough technologies with homegrown Indian innovations that drive clean energy, sustainability, and industrial transformation. A visionary global impact initiative co-created with the Founders of Magppie & Sunrooof",
+        subheadline: "Converging breakthrough technologies with homegrown Indian innovations that drive clean energy, sustainability, and industrial transformation. A visionary global impact initiative co-created with the Founders of Magppie & Sunrooof.",
+        quote: {
+            text: "Innovating today to inherit tomorrow's Earth.",
+            author: "Founders"
+        },
         badges: [
             "10-15% Coal Savings",
             "Double-Digit Efficiency",
@@ -14,8 +18,8 @@ export const homeContent = {
             { label: "Our Innovation Portfolio", primary: false, link: "/products" }
         ],
         metrics: [
-            { label: "Coal Savings", value: "15.4M", suffix: "tonnes", sub: "National Scale Impact" },
-            { label: "CO₂ Reduction", value: "49M+", suffix: "tonnes", sub: "Annual Avoidance" },
+            { label: "Coal Savings", value: "15.4M", suffix: "tons", sub: "National Scale Impact" },
+            { label: "CO₂ Reduction", value: "49M+", suffix: "tons", sub: "Annual Avoidance" },
             { label: "Economic Value", value: "₹67k", suffix: "crore", sub: "Forex Savings" },
             { label: "Efficiency", value: "15%", suffix: "Gain", sub: "Optimized Operations" }
         ]

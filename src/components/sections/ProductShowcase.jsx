@@ -14,9 +14,10 @@ const ProductShowcase = () => {
     const activeProduct = products.find(p => p.id === activeTabId) || products[0];
 
     // Group products by section (Solution 6: Joint Solutions approach)
-    const grafilliumProducts = products.filter(p => p.brand?.includes('Grafillium') && !p.brand?.includes('&'));
-    const jointProducts = products.filter(p => p.brand?.includes('&'));
-    const nexergProducts = products.filter(p => p.brand?.includes('Nexerg') && !p.brand?.includes('&'));
+    // Group products by section (Solution 6: Joint Solutions approach)
+    const jointProducts = products.filter(p => p.brand?.includes('&') || p.brand?.includes(' x '));
+    const grafilliumProducts = products.filter(p => p.brand?.includes('Grafillium') && !p.brand?.includes('&') && !p.brand?.includes(' x '));
+    const nexergProducts = products.filter(p => p.brand?.includes('Nexerg') && !p.brand?.includes('&') && !p.brand?.includes(' x '));
 
     const toggleSection = (section) => {
         setOpenSection(openSection === section ? null : section);
@@ -54,40 +55,8 @@ const ProductShowcase = () => {
 
                     {/* DESKTOP: Sidebar Navigation (lg and up) - Solution 6 */}
                     <div className="hidden lg:flex lg:col-span-1 flex-col gap-2 lg:sticky lg:top-24 self-start">
-                        {/* Grafillium Series */}
+                        {/* Joint Solutions (Coalorix) */}
                         <div className="space-y-1">
-                            {grafilliumProducts.map((product) => {
-                                const isActive = activeTabId === product.id;
-                                return (
-                                    <button
-                                        key={product.id}
-                                        onClick={() => setActiveTabId(product.id)}
-                                        className={clsx(
-                                            "w-full group flex items-center justify-between p-4 transition-all duration-300 text-left relative rounded-xl",
-                                            isActive ? "bg-slate-50 shadow-sm border border-slate-100" : "hover:bg-slate-50 border border-transparent"
-                                        )}
-                                    >
-                                        <div className="flex flex-col gap-1">
-                                            <span className={clsx("text-base font-bold transition-colors", isActive ? "text-slate-900" : "text-slate-400 group-hover:text-slate-900")}>
-                                                {product.name}
-                                            </span>
-                                            <span className={clsx("text-[10px] font-bold uppercase tracking-widest", isActive ? "text-teal-600" : "text-stone-300 group-hover:text-teal-500")}>
-                                                {product.category}
-                                            </span>
-                                        </div>
-                                        {isActive && (
-                                            <motion.div
-                                                layoutId="sidebarActiveIndicator"
-                                                className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-teal-500 rounded-r-full"
-                                            />
-                                        )}
-                                    </button>
-                                );
-                            })}
-                        </div>
-
-                        {/* Joint Solutions */}
-                        <div className="space-y-1 mt-6">
                             {jointProducts.map((product) => {
                                 const isActive = activeTabId === product.id;
                                 return (
@@ -111,6 +80,38 @@ const ProductShowcase = () => {
                                             <motion.div
                                                 layoutId="sidebarActiveIndicator"
                                                 className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-purple-500 rounded-r-full"
+                                            />
+                                        )}
+                                    </button>
+                                );
+                            })}
+                        </div>
+
+                        {/* Grafillium Series */}
+                        <div className="space-y-1 mt-6">
+                            {grafilliumProducts.map((product) => {
+                                const isActive = activeTabId === product.id;
+                                return (
+                                    <button
+                                        key={product.id}
+                                        onClick={() => setActiveTabId(product.id)}
+                                        className={clsx(
+                                            "w-full group flex items-center justify-between p-4 transition-all duration-300 text-left relative rounded-xl",
+                                            isActive ? "bg-slate-50 shadow-sm border border-slate-100" : "hover:bg-slate-50 border border-transparent"
+                                        )}
+                                    >
+                                        <div className="flex flex-col gap-1">
+                                            <span className={clsx("text-base font-bold transition-colors", isActive ? "text-slate-900" : "text-slate-400 group-hover:text-slate-900")}>
+                                                {product.name}
+                                            </span>
+                                            <span className={clsx("text-[10px] font-bold uppercase tracking-widest", isActive ? "text-teal-600" : "text-stone-300 group-hover:text-teal-500")}>
+                                                {product.category}
+                                            </span>
+                                        </div>
+                                        {isActive && (
+                                            <motion.div
+                                                layoutId="sidebarActiveIndicator"
+                                                className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-teal-500 rounded-r-full"
                                             />
                                         )}
                                     </button>
@@ -150,12 +151,7 @@ const ProductShowcase = () => {
                             })}
                         </div>
 
-                        <div className="mt-8 pt-8 border-t border-slate-100 pl-4">
-                            <Link to="/products/pipeline" className="flex items-center gap-3 text-slate-400 hover:text-teal-600 transition-colors group">
-                                <span className="text-xs font-bold uppercase tracking-widest">Innovation Pipeline</span>
-                                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                            </Link>
-                        </div>
+
                     </div>
 
                     {/* MOBILE: Simple List Navigation (below lg) */}
@@ -185,12 +181,7 @@ const ProductShowcase = () => {
                             })}
                         </div>
 
-                        <div className="pt-4 mt-4 border-t border-slate-100">
-                            <Link to="/products/pipeline" className="flex items-center justify-center gap-3 text-slate-400 hover:text-teal-600 transition-colors group p-3">
-                                <span className="text-xs font-bold uppercase tracking-widest">Innovation Pipeline</span>
-                                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                            </Link>
-                        </div>
+
                     </div>
 
                     {/* 2. Content Area (Cols 2-4) */}

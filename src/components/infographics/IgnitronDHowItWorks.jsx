@@ -43,7 +43,7 @@ const IgnitronDHowItWorks = () => {
       title: 'Engine Protection',
       description: 'Reduced deposits and cleaner combustion extend engine life and reduce maintenance',
       icon: Shield,
-      detail: 'Extended engine life'
+      detail: 'Extended'
     }
   ];
 

@@ -29,11 +29,11 @@ const CoalorixDeepDive = () => {
   ];
 
   const trueCostData = [
-    { pollutant: 'CO₂ Emissions', share: '1.18BMT', source: 'Power sector (80%+ from coal)' },
-    { pollutant: 'SO₂', share: '45-60%', source: 'From coal combustion' },
-    { pollutant: 'NOₓ', share: '~30%', source: 'From coal plants' },
-    { pollutant: 'PM2.5', share: '>15%', source: 'From coal operations' },
-    { pollutant: 'Mercury', share: '~80%', source: 'From coal combustion' }
+    { pollutant: 'CO₂ Emissions', share: '22.9B tons', source: 'Power sector (80%+ from coal)' },
+    { pollutant: 'PM/soot & CO', share: '↓ up to 9%', source: 'Reduction with Coalorix' },
+    { pollutant: 'NOₓ', share: '↓ up to 10%', source: 'Reduction with Coalorix' },
+    { pollutant: 'SO₂', share: '↓ up to 8%', source: 'Reduction with Coalorix' },
+    { pollutant: 'Mercury', share: 'Proportional', source: 'Reduction with Coalorix' }
   ];
 
   return (
@@ -212,7 +212,7 @@ const CoalorixDeepDive = () => {
             <TrendingUp size={32} className="text-orange-400 mb-4" />
             <div className="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">ROI Performance</div>
             <div className="text-3xl font-black text-white mb-3">1 month 19 days</div>
-            <div className="text-sm text-stone-300">Payback period with 15% coal savings optimization</div>
+            <div className="text-sm text-stone-300">Payback period with 9% coal savings optimization</div>
           </div>
         </div>
       </div>
@@ -258,7 +258,7 @@ const CoalorixDeepDive = () => {
             <div className="space-y-3">
               <div className="flex items-center justify-between pb-3 border-b border-stone-200">
                 <span className="text-sm font-medium text-stone-700">Coal Reduction</span>
-                <span className="text-lg font-bold text-orange-600">up to 15%</span>
+                <span className="text-lg font-bold text-orange-600">up to 9-15%</span>
               </div>
               <div className="flex items-center justify-between pb-3 border-b border-stone-200">
                 <span className="text-sm font-medium text-stone-700">CO₂ Reduction</span>

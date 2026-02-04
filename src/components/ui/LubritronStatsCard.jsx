@@ -18,7 +18,7 @@ const LubritronStatsCard = () => {
     {
       value: 'Extended',
       unit: '',
-      label: 'Oil life',
+      label: 'Engine life',
       icon: Clock
     },
     {
@@ -43,12 +43,12 @@ const LubritronStatsCard = () => {
               className="p-6 bg-stone-50 border border-stone-200 rounded-xl hover:border-emerald-500/30 hover:bg-white transition-all group"
             >
               <IconComponent size={20} className="text-emerald-500 mb-4 group-hover:scale-110 transition-transform" />
-              <div className="text-4xl font-black text-black tracking-tight mb-1">
-                {stat.value}
-                {stat.unit && <span className="text-xl ml-1 text-stone-400 font-bold">{stat.unit}</span>}
-              </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+              <div className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-2">
                 {stat.label}
+              </div>
+              <div className="text-3xl font-bold text-black tracking-tight">
+                {stat.value}
+                {stat.unit && <span className="text-lg ml-1 text-stone-400">{stat.unit}</span>}
               </div>
             </motion.div>
           );

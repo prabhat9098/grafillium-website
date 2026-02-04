@@ -22,7 +22,7 @@ const LubritronHowItWorks = () => {
       title: 'Thermal Stability',
       description: 'Enhanced temperature resistance prevents oil breakdown, maintaining viscosity and performance under extreme heat',
       icon: Wind,
-      detail: 'Extended'
+      detail: 'Extended Engine life'
     },
     {
       number: 4,
@@ -40,10 +40,10 @@ const LubritronHowItWorks = () => {
     },
     {
       number: 6,
-      title: 'Extended Oil Life',
+      title: 'Extended Engine Life',
       description: 'Cumulative benefits of reduced wear, better lubrication, and cleaner operation extend overall engine lifespan',
       icon: TrendingUp,
-      detail: 'Oil Life'
+      detail: 'Longer engine life'
     }
   ];
 
@@ -164,7 +164,7 @@ const LubritronHowItWorks = () => {
                 <span className="font-bold text-emerald-400">↓ Up to 40%</span>
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-white/10">
-                <span className="text-stone-300">Oil life:</span>
+                <span className="text-stone-300">Engine life:</span>
                 <span className="font-bold text-emerald-400">Extended</span>
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-white/10">
