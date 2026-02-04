@@ -85,7 +85,7 @@ export const pipelineData = [
                 problem: "Poor roads increase fuel consumption by 10–20%, increasing vehicle wear and India's fuel import bill (₹12 lakh crore+/year).",
                 solution: [
                     "Enables 5–15% fuel savings",
-                    "5-15% (proportionate) reduction in national PM2.5, NOx & CO2 emissions"
+                    "5-15% (proportionate) reduction in national PM₂.₅, NOₓ, CO₂ & SO₂ & emissions"
                 ],
                 impact: [
                     "~₹50,000 crore/year fuel savings",
@@ -321,13 +321,13 @@ export const pipelineData = [
         targetApplications: "Boilers, furnaces, kilns, high-temperature pipelines, storage tanks, industrial reactors"
     },
     {
-        id: "agnishield",
-        name: "AgniShield™",
+        id: "flameguard",
+        name: "FlameGuard™",
         tagline: "Fire-Retardant Paint Additive for building safety",
         sector: "Construction",
         brand: "Grafillium",
         status: "Concept Validation",
-        text: "AgniShield™ is an advanced paint additive that imparts fire-retardant properties to wall paints, creating an intumescent char barrier that slows flame spread and extends evacuation time (30–120+ minutes).",
+        text: "FlameGuard™ is an advanced paint additive that imparts fire-retardant properties to wall paints, creating an intumescent char barrier that slows flame spread and extends evacuation time (30–120+ minutes).",
 
         // Key Benefits - Always Visible on Card
         keyBenefits: [
@@ -384,7 +384,7 @@ export const pipelineData = [
 
         // Executive Overview (for detailed view)
         executiveOverview: {
-            definition: "AgniShield is an advanced paint additive that imparts fire-retardant properties to wall paints, creating an intumescent char barrier. This barrier slows flame spread, extends evacuation time (30–120+ minutes), and protects structures—critical as fire incidents cause massive losses without such protection.",
+            definition: "FlameGuard is an advanced paint additive that imparts fire-retardant properties to wall paints, creating an intumescent char barrier. This barrier slows flame spread, extends evacuation time (30–120+ minutes), and protects structures—critical as fire incidents cause massive losses without such protection.",
             problemStatement: "India sees ~1 lakh fire incidents/year in buildings (NFIRS data), costing ₹20,000–30,000 crore in direct damages amid rapid urbanization (50,000+ high-rises under construction). Globally, building fires inflict $300–500B annual losses with 4M incidents/year."
         },
 

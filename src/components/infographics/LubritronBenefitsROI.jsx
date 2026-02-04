@@ -18,8 +18,8 @@ const LubritronBenefitsROI = () => {
       color: 'emerald'
     },
     {
-      title: 'Extended Oil Life',
-      value: 'Longer Intervals',
+      title: 'Oil Life',
+      value: 'Extended',
       detail: 'Reduced oil change frequency and maintenance',
       icon: Clock,
       color: 'blue'
@@ -69,7 +69,7 @@ const LubritronBenefitsROI = () => {
   const costComparison = [
     { category: 'Fuel Costs', without: '100%', with: '94%', savings: '6%' },
     { category: 'Maintenance', without: '100%', with: '~75%', savings: '~25%' },
-    { category: 'Oil Changes', without: 'Standard', with: 'Extended', savings: 'Up to 50%' }
+    { category: 'Oil Life', without: 'Standard', with: 'Extended', savings: 'Extended' }
   ];
 
   return (
@@ -93,13 +93,13 @@ const LubritronBenefitsROI = () => {
                 className="relative p-6 bg-gradient-to-br from-stone-50 to-white border-2 border-stone-200 rounded-xl hover:border-emerald-500/30 transition-all group overflow-hidden"
               >
                 <div className={`absolute top-0 right-0 w-32 h-32 ${benefit.color === 'purple' ? 'bg-emerald-500/5' :
-                    benefit.color === 'emerald' ? 'bg-emerald-500/5' :
-                      'bg-blue-500/5'
+                  benefit.color === 'emerald' ? 'bg-emerald-500/5' :
+                    'bg-blue-500/5'
                   } rounded-full blur-3xl group-hover:opacity-100 opacity-50 transition-all`} />
 
                 <IconComponent size={32} className={`${benefit.color === 'purple' ? 'text-emerald-500' :
-                    benefit.color === 'emerald' ? 'text-emerald-500' :
-                      'text-blue-500'
+                  benefit.color === 'emerald' ? 'text-emerald-500' :
+                    'text-blue-500'
                   } mb-4 relative z-10`} />
 
                 <div className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-2 relative z-10">
@@ -107,8 +107,8 @@ const LubritronBenefitsROI = () => {
                 </div>
 
                 <div className={`text-3xl font-black mb-3 relative z-10 ${benefit.color === 'purple' ? 'text-emerald-600' :
-                    benefit.color === 'emerald' ? 'text-emerald-600' :
-                      'text-blue-600'
+                  benefit.color === 'emerald' ? 'text-emerald-600' :
+                    'text-blue-600'
                   }`}>
                   {benefit.value}
                 </div>
@@ -170,8 +170,8 @@ const LubritronBenefitsROI = () => {
                 className="p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm text-center hover:bg-white/10 transition-all"
               >
                 <IconComponent size={32} className={`${metric.color === 'purple' ? 'text-emerald-400' :
-                    metric.color === 'emerald' ? 'text-emerald-400' :
-                      'text-blue-400'
+                  metric.color === 'emerald' ? 'text-emerald-400' :
+                    'text-blue-400'
                   } mx-auto mb-4`} />
 
                 <div className="text-xs font-bold uppercase tracking-widest text-stone-400 mb-3">

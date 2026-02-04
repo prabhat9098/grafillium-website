@@ -178,7 +178,7 @@ const LubritronDeepDive = () => {
             The combined effect of friction losses, oil degradation, increased maintenance,
             and higher emissions creates a significant economic and environmental burden.
             Lubritron addresses all these factors simultaneously, delivering measurable improvements
-            across fuel efficiency, engine wear, oil life, and emissions.
+            across fuel efficiency, engine wear, Oil Life, and emissions.
           </p>
         </div>
       </div>
@@ -195,7 +195,7 @@ const LubritronDeepDive = () => {
             <p className="text-xl font-bold text-black leading-relaxed mb-4">
               While electric vehicles gain ground, internal combustion engines will remain dominant
               in commercial transport for decades. Lubritron provides an immediate, cost-effective
-              solution to improve efficiency, reduce emissions, and extend engine life across the
+              solution to improve efficiency, reduce emissions, and extend oil life across the
               existing vehicle fleet.
             </p>
             <div className="flex items-center gap-2 text-sm font-bold text-emerald-600">

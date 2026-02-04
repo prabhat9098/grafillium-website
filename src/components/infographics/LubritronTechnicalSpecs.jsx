@@ -5,7 +5,7 @@ const LubritronTechnicalSpecs = () => {
   const specifications = [
     { category: 'Fuel Savings', value: 'Up to 6%', icon: Gauge },
     { category: 'Wear Reduction', value: 'Up to 40%', icon: Shield },
-    { category: 'Oil Life Extension', value: 'Up to 50%', icon: Clock },
+    { category: 'Oil Life', value: 'Extended', icon: Clock },
     { category: 'Deployment', value: 'Add to Engine Oil', icon: Droplets },
     { category: 'Compatibility', value: 'All Oils', icon: CheckCircle },
     { category: 'Status', value: 'Field Testing', icon: Beaker }
@@ -25,8 +25,8 @@ const LubritronTechnicalSpecs = () => {
       color: 'emerald'
     },
     {
-      category: 'Extended Oil Life',
-      value: 'Up to 50%',
+      category: 'Oil Life',
+      value: 'Extended',
       detail: 'Longer intervals between oil changes',
       color: 'blue'
     }
@@ -74,11 +74,11 @@ const LubritronTechnicalSpecs = () => {
                 <div className="flex items-start justify-between mb-3">
                   <IconComponent size={20} className="text-emerald-500 group-hover:scale-110 transition-transform" />
                 </div>
-                <div className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-1">
-                  {spec.category}
-                </div>
-                <div className="text-lg font-bold text-black">
+                <div className="text-2xl font-black text-black">
                   {spec.value}
+                </div>
+                <div className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+                  {spec.category}
                 </div>
               </motion.div>
             );
@@ -98,8 +98,8 @@ const LubritronTechnicalSpecs = () => {
               <div className="flex items-center justify-between mb-3">
                 <span className="text-sm font-bold text-stone-900">{item.category}</span>
                 <span className={`text-2xl font-black ${item.color === 'purple' ? 'text-emerald-600' :
-                    item.color === 'emerald' ? 'text-emerald-600' :
-                      'text-blue-600'
+                  item.color === 'emerald' ? 'text-emerald-600' :
+                    'text-blue-600'
                   }`}>
                   {item.value}
                 </span>
@@ -111,8 +111,8 @@ const LubritronTechnicalSpecs = () => {
                   animate={{ width: item.value }}
                   transition={{ duration: 1, delay: 0.5 + idx * 0.1 }}
                   className={`h-full ${item.color === 'purple' ? 'bg-gradient-to-r from-emerald-400 to-emerald-600' :
-                      item.color === 'emerald' ? 'bg-gradient-to-r from-emerald-400 to-emerald-600' :
-                        'bg-gradient-to-r from-blue-400 to-blue-600'
+                    item.color === 'emerald' ? 'bg-gradient-to-r from-emerald-400 to-emerald-600' :
+                      'bg-gradient-to-r from-blue-400 to-blue-600'
                     } rounded-full`}
                 />
               </div>

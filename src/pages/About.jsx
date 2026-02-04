@@ -35,6 +35,16 @@ const About = () => {
                         <p className="text-xl md:text-2xl font-medium leading-relaxed text-stone-500 max-w-2xl">
                             {aboutContent.hero.tagline}
                         </p>
+                        {aboutContent.hero.quote && (
+                            <div className="mt-10 pt-10 border-t border-stone-100">
+                                <p className="text-2xl md:text-3xl font-medium italic text-black leading-tight mb-4 max-w-2xl">
+                                    "{aboutContent.hero.quote}"
+                                </p>
+                                <p className="text-sm font-bold uppercase tracking-widest text-stone-400">
+                                    — {aboutContent.hero.quoteAuthor}
+                                </p>
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>

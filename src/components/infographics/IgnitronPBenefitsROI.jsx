@@ -18,8 +18,8 @@ const IgnitronPBenefitsROI = () => {
       color: 'emerald'
     },
     {
-      title: 'Engine Health',
-      value: 'Enhanced',
+      title: 'Engine life',
+      value: 'Extended',
       detail: 'Smoother operation, reduced knocking',
       icon: Shield,
       color: 'purple'

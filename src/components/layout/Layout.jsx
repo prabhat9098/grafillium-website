@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
                         </div>
                         <p className="text-stone-400 max-w-sm mb-8 leading-relaxed">
                             Engineering existing energy infrastructure for a cleaner transitional reality.
-                            Nano-tech additives for coal, diesel, and lubricants.
+                            Nano-tech additives for coal, diesel, petrol and lubricants.
                         </p>
                         <div className="flex gap-4">
                             <a href="https://twitter.com/graffilium" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-stone-900 border border-stone-800 text-stone-400 flex items-center justify-center hover:bg-emerald-500 hover:text-white hover:border-emerald-500 transition-colors">X</a>

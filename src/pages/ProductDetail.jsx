@@ -232,44 +232,50 @@ const ProductDetail = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {product.specs.savingsMarketing && (
                                 <div className="p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm">
-                                    <div className={`text-2xl font-bold mb-2 ${theme.statsText}`}>
-                                        {product.specs.savingsMarketing}
+                                    <div className={`text-4xl font-black mb-1 ${theme.statsText}`}>
+                                        {product.specs.savingsMarketing.match(/[\d--]+%?/)?.[0] || product.specs.savingsMarketing}
                                     </div>
-                                    <div className="text-sm text-slate-300">
-                                        {product.id === 'coalorix' ? 'Coal Savings' : 'Fuel Savings'}
+                                    <div className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                                        {product.specs.savingsMarketing.replace(/[\d--]+%?\s*/, '') || (product.id === 'coalorix' ? 'Coal Savings' : 'Fuel Savings')}
                                     </div>
                                 </div>
                             )}
                             {product.specs.emissionsMarketing && (
                                 <div className="p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm">
-                                    <div className={`text-2xl font-bold mb-2 ${theme.statsText}`}>
-                                        {product.specs.emissionsMarketing}
+                                    <div className={`text-4xl font-black mb-1 ${theme.statsText}`}>
+                                        {product.specs.emissionsMarketing.match(/[\d--]+%?/)?.[0] || product.specs.emissionsMarketing}
                                     </div>
-                                    <div className="text-sm text-slate-300">Emission Reduction</div>
+                                    <div className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                                        {product.specs.emissionsMarketing.replace(/[\d--]+%?\s*/, '') || 'Emission Reduction'}
+                                    </div>
                                 </div>
                             )}
                             {product.specs.dose && (
                                 <div className="p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm">
-                                    <div className={`text-2xl font-bold mb-2 ${theme.statsText}`}>
+                                    <div className={`text-4xl font-black mb-1 ${theme.statsText}`}>
                                         {product.specs.dose}
                                     </div>
-                                    <div className="text-sm text-slate-300">Dosage</div>
+                                    <div className="text-xs font-bold uppercase tracking-widest text-slate-400">Dosage</div>
                                 </div>
                             )}
                             {product.specs.wearMarketing && (
                                 <div className="p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm">
-                                    <div className={`text-4xl font-bold mb-2 ${theme.statsText}`}>
-                                        {product.specs.wearMarketing.match(/\d+%?/)?.[0] || product.specs.wearMarketing}
+                                    <div className={`text-4xl font-black mb-1 ${theme.statsText}`}>
+                                        {product.specs.wearMarketing.match(/[\d--]+%?/)?.[0] || product.specs.wearMarketing}
                                     </div>
-                                    <div className="text-sm text-slate-300">{product.specs.wearMarketing.replace(/\d+%?\s*/, '')}</div>
+                                    <div className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                                        {product.specs.wearMarketing.replace(/[\d--]+%?\s*/, '').replace(/Up to\s*/i, '') || 'Wear Reduction'}
+                                    </div>
                                 </div>
                             )}
                             {product.specs.oilLifeMarketing && (
                                 <div className="p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm">
-                                    <div className={`text-3xl font-bold mb-2 ${theme.statsText}`}>
-                                        {product.specs.oilLifeMarketing.match(/[\d--]+%?/)?.[0] || product.specs.oilLifeMarketing}
+                                    <div className={`text-4xl font-black mb-1 ${theme.statsText}`}>
+                                        {product.specs.oilLifeMarketing.match(/[\d--]+%?|Extended/i)?.[0] || product.specs.oilLifeMarketing}
                                     </div>
-                                    <div className="text-sm text-slate-300">{product.specs.oilLifeMarketing.replace(/[\d--]+%?\s*/, '')}</div>
+                                    <div className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                                        {product.specs.oilLifeMarketing.replace(/[\d--]+%?\s*|Extended\s*/i, '') || 'Oil Life'}
+                                    </div>
                                 </div>
                             )}
                         </div>
@@ -940,7 +946,7 @@ const ProductDetail = () => {
                                                             </p>
                                                         </div>
                                                         <div className="p-6 bg-orange-50 border border-orange-200 rounded-xl">
-                                                            <div className="text-xs font-bold uppercase tracking-widest text-orange-600 mb-3">India Context</div>
+                                                            <div className="text-xs font-bold uppercase tracking-widest text-orange-600 mb-3">India Context1</div>
                                                             <p className="text-lg text-slate-800 font-medium leading-relaxed">
                                                                 {product.tabs.energyReality.india}
                                                             </p>
@@ -983,9 +989,7 @@ const ProductDetail = () => {
                                                         <p className="text-lg text-stone-700 font-medium leading-relaxed mb-6">
                                                             {product.tabs.deepDive.math}
                                                         </p>
-                                                        <p className="text-sm uppercase tracking-widest text-stone-500 font-bold">
-                                                            Validated by Third-Party Audit
-                                                        </p>
+
                                                     </div>
 
                                                     <div>

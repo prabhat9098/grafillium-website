@@ -3,7 +3,7 @@ import { BarChart3, FlaskConical, Globe2, Layers, Leaf, Zap } from "lucide-react
 export const homeContent = {
     hero: {
         headline: "Engineering the Future of Innovations",
-        subheadline: "Converging breakthrough technologies with homegrown Indian innovations that drive clean energy, sustainability, and industrial transformation.",
+        subheadline: "Converging breakthrough technologies with homegrown Indian innovations that drive clean energy, sustainability, and industrial transformation. A visionary global impact initiative co-created with the Founders of Magppie & Sunrooof",
         badges: [
             "10-15% Coal Savings",
             "Double-Digit Efficiency",

@@ -239,7 +239,7 @@ export const productsContent = [
     {
         id: "lubritron",
         name: "Lubritron",
-        tagline: "Less friction. More miles. Longer engine life.",
+        tagline: "Less friction. More miles. Extended Oil Life.",
         image: lubritronImage,
         category: "Engine Oil",
         brand: "Grafillium",
@@ -249,14 +249,14 @@ export const productsContent = [
             savingsMarketing: "Up to 6% Fuel Savings",
             wear: "-40%",
             wearMarketing: "Up to 40% Wear Reduction",
-            oilLife: "up to 50%",
-            oilLifeMarketing: "Up to 50% Extended Oil Life"
+            oilLife: "Extended",
+            oilLifeMarketing: "Extended Oil Life"
         },
         hero: {
             metrics: [
                 { label: "Fuel Savings", value: "Up to 6%", sub: "Optimized" },
                 { label: "Wear Reduction", value: "Up to 40%", sub: "Less Friction" },
-                { label: "Oil Life", value: "Up to 50%", sub: "Extended" }
+                { label: "Oil Life", value: "Extended", sub: "Extended" }
             ]
         },
         impact: {
@@ -270,7 +270,7 @@ export const productsContent = [
                 benefits: [
                     "Up to 6% fuel savings",
                     "Up to 40% wear reduction",
-                    "Extended oil change intervals",
+                    "Oil Life",
                     "Lower maintenance costs",
                     "Works with all oils (mineral, synthetic)"
                 ]
@@ -278,7 +278,7 @@ export const productsContent = [
             primaryBenefits: {
                 fuelSavings: "Up to 6%",
                 wearReduction: "Up to 40%",
-                oilLife: "Extended oil change intervals",
+                oilLife: "Oil Life",
                 maintenance: "Lower maintenance costs",
                 emissions: "CO₂ ↓ up to 6%; PM/smoke ↓ up to 25%; NOₓ ↓ up to 10%"
             },
@@ -382,7 +382,7 @@ export const productsContent = [
             },
             energyReality: {
                 global: "Petrol >1.2 BMT/year; ~15% transport energy; >2.8 BMT CO₂.",
-                india: "~37 million metric tons (FY2023-24); 5-7% CAGR growth."
+                india: "India's petrol consumption hit a record ~37 million metric tons (FY2023-24), growing at a CAGR of 5-7%. With over 300 million two-wheelers and 50 million passenger cars on the road, petrol remains the primary fuel for personal mobility. This massive scale results in significant forex drain and urban air quality challenges."
             },
             nationalScaleImpact: {
                 fuelSaved: "3.7 MMT (~4.9B litres)",
@@ -395,14 +395,15 @@ export const productsContent = [
             },
             trueCost: {
                 title: "The Hidden Cost of Petrol",
-                global: "CO, HC, NOₓ, particulates; urban smog; ~110 MMT CO₂ in India."
+                global: "CO, HC, NOₓ, particulates; urban smog; ~2.8 BMT CO₂; major impact on urban health.",
+                india: "In India, petrol combustion generates ~110 MMT of CO₂ annually. Urban centers like Delhi, Mumbai, and Bengaluru face severe AQI issues, with vehicular emissions contributing significantly to smog and respiratory illnesses. Ignitron P targets these 'hidden costs' by improving combustion efficiency, thereby reducing harmful CO and HC emissions by up to 30%."
             }
         }
     },
     {
         id: "pipeline",
         name: "Innovation Pipeline",
-        tagline: "Building the industrial backbone of tomorrow.",
+        tagline: "A visionary global impact initiative co-created with the Founders of Magppie & Sunrooof for better tomorrow.",
         image: null,
         category: "Future Tech",
         status: "R&D",
@@ -424,7 +425,7 @@ export const productsContent = [
                 benefits: [
                     "Cutting-edge nano-technology applications",
                     "Sector-specific solutions in development",
-                    "Technology Readiness Levels (TRL) 3-8",
+                    "Technology Readiness Levels (TRL) 5-10",
                     "Pilot programs available for select products",
                     "Continuous innovation and testing"
                 ]
@@ -526,13 +527,13 @@ export const productsContent = [
                 viewMore: true
             },
             {
-                name: "Plume Dynamics",
+                name: "Aquamax",
                 brand: "Grafillium",
                 sector: "Power & Data",
                 status: "Under Development",
                 tagline: "Revolutionizing Water Recovery: Sustainable, Scalable, Smart",
-                text: "Plume Dynamics captures and conserves evaporated water from industrial cooling systems using advanced dual-technology platform for maximum water efficiency.",
-                oneLine: "Plume Dynamics: Captures water, saves money, secures the future.",
+                text: "Aquamax captures and conserves evaporated water from industrial cooling systems using advanced dual-technology platform for maximum water efficiency.",
+                oneLine: "Aquamax: Captures water, saves money, secures the future.",
                 keyTechnologies: {
                     hamr: {
                         name: "HAMR (High-Efficiency Atmospheric Moisture Recovery)",
@@ -577,13 +578,13 @@ export const productsContent = [
                 viewMore: true
             },
             {
-                name: "InsuShield",
+                name: "ThermoGuard",
                 brand: "Grafillium",
                 sector: "Construction",
                 status: "Under Development",
                 tagline: "Thermal Insulation Paint Additive for energy-efficient buildings",
-                text: "InsuShield is an advanced paint additive that imparts thermal insulation to building wall paints, directly addressing massive economic losses from unchecked heat transfer and high cooling demand.",
-                oneLine: "InsuShield: Keeps buildings cooler, cuts energy bills, extends life.",
+                text: "ThermoGuard is an advanced paint additive that imparts thermal insulation to building wall paints, directly addressing massive economic losses from unchecked heat transfer and high cooling demand.",
+                oneLine: "ThermoGuard: Keeps buildings cooler, cuts energy bills, extends life.",
                 keyBenefits: [
                     "25–40% lower AC usage; indoor temps 5–10°C cooler",
                     "30–50% fewer repainting & facade repairs",
@@ -627,13 +628,13 @@ export const productsContent = [
                 viewMore: true
             },
             {
-                name: "AgniShield",
+                name: "FlameGuard",
                 brand: "Grafillium",
                 sector: "Construction",
                 status: "Under Development",
                 tagline: "Fire-Retardant Paint Additive for building safety",
-                text: "AgniShield paint additive imparts fire-retardant properties to wall paints, creating an intumescent char barrier that slows flame spread and extends evacuation time (30–120+ minutes).",
-                oneLine: "AgniShield: Stops fire spread, saves lives, protects assets.",
+                text: "FlameGuard paint additive imparts fire-retardant properties to wall paints, creating an intumescent char barrier that slows flame spread and extends evacuation time (30–120+ minutes).",
+                oneLine: "FlameGuard: Stops fire spread, saves lives, protects assets.",
                 keyBenefits: [
                     "Creates intumescent char barrier against flames",
                     "Extends evacuation time by 30–120+ minutes",

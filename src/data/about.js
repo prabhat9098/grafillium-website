@@ -4,7 +4,9 @@ import VikasImage from '../assets/Vikas.jpeg';
 export const aboutContent = {
     hero: {
         title: "About Grafillium",
-        tagline: "Building the industrial backbone of tomorrow",
+        tagline: "A visionary global impact initiative co-created with the Founders of Magppie & Sunrooof for better tomorrow",
+        quote: "Innovating today to inherit tomorrow's Earth.",
+        quoteAuthor: "Founders",
         mission: "Accelerating India’s transition toward cleaner, smarter, and self-reliant technologies through world-class research and industrial execution."
     },
     overview: {
@@ -134,7 +136,7 @@ export const aboutContent = {
                 title: "Co-Founder",
                 subtitle: "Chief Finance Officer",
                 experience: "20+ years",
-                bio: "With over 20 years of diverse experience across multiple industries, Vievek Jain is a seasoned professional specializing in Mergers & Acquisitions, Investment Banking, and Strategic Growth Initiatives. His expertise spans Asset Management, Investment Banking, Real Estate, Houseware, and Global Trade—demonstrating a strong acumen for identifying and capitalizing on business opportunities in dynamic and evolving markets.",
+                bio: "With over 20 years of diverse experience across multiple industries, Vievek Jain is a seasoned professional specializing in Mergers & Acquisitions, Investment Banking, and Strategic Growth Initiatives. His expertise spans Asset Management, Investment Banking, Real Estate, Houseware, and Global Trade demonstrating a strong acumen for identifying and capitalizing on business opportunities in dynamic and evolving markets.",
                 background: "Vievek has built a distinguished career working with leading financial institutions, stock and securities firms, Infosys, and global banks. His ability to structure high-value financial transactions, drive business expansions, and foster sustainable growth has positioned him as a key player in navigating complex investment landscapes.",
                 leadership: "As a Co-Founder, Vievek brings a strategic and forward-thinking approach to business transformation, leveraging his multi-industry experience to develop innovative, high-impact solutions. His leadership is defined by a strong focus on value creation, operational excellence, and long-term growth strategies, ensuring businesses thrive in competitive environments.",
                 education: "B.Com (Hons.) - Delhi University | MBA in Finance - New York",
@@ -155,7 +157,7 @@ export const aboutContent = {
                 subtitle: "CEO & Chief Manufacturing Officer",
                 experience: "25+ years",
                 bio: "With over 25 years of global experience spanning Australia, China, Italy, Germany, and India, Vikas Jain is a visionary entrepreneur and strategist with an extensive background in manufacturing, business strategy, and sustainable engineering. His expertise lies in leveraging cross-industry knowledge to develop innovative, high-impact solutions that drive environmental sustainability.",
-                background: "As the Co-founder of Plume Dynamics, Vikas is at the forefront of deeptech-driven environmental solutions, breaking barriers across industries to tackle some of the world's most pressing challenges. He believes that \"Nothing is impossible\"—a philosophy that has fueled his success in pioneering disruptive technologies and implementing transformative business strategies.",
+                background: "As the Co-founder of Aquamax, Vikas is at the forefront of deeptech-driven environmental solutions, breaking barriers across industries to tackle some of the world's most pressing challenges. He believes that \"Nothing is impossible\". a philosophy that has fueled his success in pioneering disruptive technologies and implementing transformative business strategies.",
                 leadership: "Vikas holds a Lean Manufacturing Management certification from Monash University, Melbourne, equipping him with a sharp analytical approach to optimizing production efficiency and sustainability. His current focus is on revolutionizing plume capture technologies and exploring the potential of clean nuclear energy to shape a greener future.",
                 education: "Lean Manufacturing Management - Monash University, Melbourne",
                 expertise: [
@@ -166,7 +168,7 @@ export const aboutContent = {
                     "Clean Energy Solutions"
                 ],
                 linkedin: "",
-                companies: "Plume Dynamics | Grafillium",
+                companies: "Aquamax | Grafillium",
                 image: VikasImage,
                 placeholder: false
             },
@@ -175,9 +177,9 @@ export const aboutContent = {
                 title: "Co-Founder",
                 subtitle: "Business Operations & Digital Growth",
                 experience: "5+ years",
-                bio: "At 22, Ishat Jain is a serial entrepreneur who has built and scaled multiple ventures from the ground up. With a unique educational journey—choosing entrepreneurship over traditional schooling at age 13—Ishat has developed a hands-on expertise in business fundamentals, leadership, and growth strategy through real-world experience rather than conventional academics.",
-                background: "Ishat's entrepreneurial journey spans diverse industries: from founding Bekynd (a vegan smoothie bar) and franchising Brave Gentlemen (vegan leather footwear) to ventures in filmmaking, premium lighting (Ombre), and glass house construction (Uncovered). Most notably, as Co-Founder of SUNROOOF, Ishat scaled the wellness lighting company from zero to ₹50 crores in revenue, expanding the team from 0 to 60+ professionals across design, sales, marketing, operations, and manufacturing.",
-                leadership: "At Grafillium, Ishat brings a data-driven, execution-focused approach to scaling operations and building high-performance teams. His expertise in organic lead generation (hundreds of daily inquiries), AI-driven sales automation (managing 10,000+ inquiries), and digital marketing (30M+ impressions) positions Grafillium for rapid market penetration. Ishat's leadership philosophy centers on hiring for attitude and cultural fit, transparent communication, and continuous improvement through structured performance frameworks.",
+                bio: "At 22 Ishat Jain is a visionary serial entrepreneur who has redefined industrial and consumer spaces through breakthrough technology. Choosing to transition from formal schooling to professional entrepreneurship at age 13 Ishat has developed a hands-on expertise in building and scaling ventures that bridge the gap between frontier science and human wellness. His journey is marked by a deep seated belief in self-directed learning and a relentless pursuit of solving impossible challenges through innovation.",
+                background: "Ishat is the founder of SUNROOOF a subsidiary of the renowned Magppie Group where he dedicated three years to nanotechnology research and engineering collaboration to create a lighting system that replicates natural sunlight. Under his leadership SUNROOOF scaled from zero to ₹50 crores in revenue within months of its launch managing a team of 60+ professionals across manufacturing and operations. His diverse portfolio includes ventures in premium lighting architecture and digital first businesses all focused on high growth market disruption.",
+                leadership: "At Grafillium Ishat leads Business Operations and Digital Growth. He leverages his proven expertise in AI driven sales automation having managed systems handling over 10,000 inquiries and high impact digital marketing with over 30M+ organic impressions. His leadership philosophy at Grafillium centers on data driven execution and building high performance teams to ensure rapid market penetration for the company's next-generation industrial additives.",
                 education: "Alternative Entrepreneurship Curriculum (Self-Directed Learning)",
                 expertise: [
                     "Business Operations & Scaling",
@@ -188,7 +190,6 @@ export const aboutContent = {
                     "Performance Management"
                 ],
                 linkedin: "https://in.linkedin.com/in/ishat-jain-59786923b",
-                companies: "SUNROOOF | Grafillium",
                 image: "/images/profiles/Ishat.webp",
                 placeholder: false
             }

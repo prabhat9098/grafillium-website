@@ -43,7 +43,7 @@ const IgnitronPHowItWorks = () => {
       title: 'Engine Protection',
       description: 'Cleaner combustion reduces carbon deposits and knocking, extending engine life and catalyst durability',
       icon: TrendingUp,
-      detail: 'Longer component life'
+      detail: 'Extended Engine life'
     }
   ];
 
