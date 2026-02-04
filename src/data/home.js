@@ -2,12 +2,8 @@ import { BarChart3, FlaskConical, Globe2, Layers, Leaf, Zap } from "lucide-react
 
 export const homeContent = {
     hero: {
-        headline: "Engineering the Future of Innovations",
-        subheadline: "Converging breakthrough technologies with homegrown Indian innovations that drive clean energy, sustainability, and industrial transformation. A visionary global impact initiative co-created with the Founders of Magppie & Sunrooof.",
-        quote: {
-            text: "Innovating today to inherit tomorrow's Earth.",
-            author: "Founders"
-        },
+        headline: "Innovating Nanomaterials to Transform Industrial Efficiency and Reduce Carbon Emissions",
+        subheadline: "Grafillium is a deeptech innovation company focused on breakthrough nanomaterial additives that significantly enhance efficiency across industrial systems. Our proprietary solutions improve combustion and performance in fuels such as coal, diesel, petrol, and engine oil, elevate coatings and paints, enable smarter bitumen performance, and support industrial water recycling — all while lowering carbon emissions and environmental impact.",
         badges: [
             "10-15% Coal Savings",
             "Double-Digit Efficiency",
@@ -82,21 +78,21 @@ export const homeContent = {
     ],
     vision: "To deliver double-digit efficiency improvements in legacy fuel and industrial systems, while reducing the global carbon footprint by 10-15% in optimized deployments, thereby bridging the gap between today's infrastructure and tomorrow's clean economy.",
     strategicImperative: {
-        title: "Challenges",
-        subtitle: "Enhance efficiency by reducing environmental impact",
-        intro: "Bridging the gap between today's operating infrastructure and tomorrow's sustainable economy requires action now. While the transition to clean systems is underway, existing assets will continue to dominate for decades. The real challenge is making them cleaner, smarter, and more efficient today.",
+        title: "What We Do",
+        subtitle: "Breakthrough nanomaterial additives for industrial transformation",
+        intro: "We innovate and deliver nanomaterial additives that enhance fuel efficiency for coal, diesel, petrol, and engine oil systems, boost performance of protective and industrial coatings, improve process efficiency in bitumen applications, and enable advanced industrial water treatment and recycling.",
         points: [
             {
-                title: "The Operational Reality",
-                description: "Global industrial and thermal energy systems form the backbone of modern economies. These assets are indispensable, capital-intensive, and long-lived. A complete transition to new infrastructure will take time. The opportunity lies in improving the performance and environmental footprint of what is already deployed."
+                title: "Energy & Combustion",
+                description: "Deep expertise in nanotechnology and materials science applied to fuel additives for coal, diesel, petrol, and engine oils, improving energy conversion and reducing friction."
             },
             {
-                title: "The Efficiency Gap",
-                description: "Hidden inefficiencies across energy, materials, and industrial processes result in massive economic losses and avoidable emissions every year. Even marginal improvements in efficiency can unlock significant cost savings, reduce resource waste, and deliver immediate environmental benefits at scale."
+                title: "Industrial Fluids & Bitumen",
+                description: "Enhancing the performance of industrial fluids, coatings, and construction materials like bitumen to drive economic and environmental value simultaneously."
             },
             {
-                title: "The Drop-In Advantage",
-                description: "Our solutions are designed to integrate seamlessly into existing products and systems. By enhancing efficiency at the molecular and process level, we enable measurable performance gains and substantial emission reductions without redesign, replacement, or operational disruption."
+                title: "Resource Recovery",
+                description: "Enabling advanced industrial water recycling and treatment systems that support reuse and recovery, reducing the overall environmental footprint."
             }
         ]
     },

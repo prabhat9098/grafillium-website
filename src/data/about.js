@@ -5,22 +5,22 @@ import VinodImage from '../assets/Vinod Jain.jpeg';
 export const aboutContent = {
     hero: {
         title: "About Grafillium",
-        tagline: "A visionary global impact initiative co-created with the Founders of Magppie & Sunrooof for better tomorrow",
-        quote: {
-            text: "Innovating today to inherit tomorrow's Earth.",
-            author: "Founders"
-        },
-        mission: "Accelerating India’s transition toward cleaner, smarter, and self-reliant technologies through world-class research and industrial execution."
+        tagline: "Science-driven deeptech for industrial efficiency and sustainability",
+        mission: "To elevate industrial performance through nanomaterial innovation and enable measurable reductions in energy intensity and carbon output."
     },
     overview: {
-        description: "Grafillium is a mission-driven innovation company accelerating India’s transition toward cleaner, smarter, and self-reliant technologies. We combine world-class research with industrial execution to deliver solutions that are sustainable, cost-effective, and scalable across global markets.",
-        belief: "We believe the next wave of industrial transformation lies in converging breakthrough technologies. By collaborating with leading scientists, global research institutions, and industrial partners, Grafillium integrates frontier science with India’s Make-in-India manufacturing ecosystem.",
-        focusItems: [
-            "Lowering operational costs",
-            "Reducing resource consumption",
-            "Minimizing carbon footprint",
-            "Strengthening India's role in the global clean-tech economy"
-        ]
+        whoWeAre: {
+            title: "Who We Are",
+            content: "Grafillium is a science-driven deeptech company dedicated to developing next-generation nanomaterial additives that redefine industrial efficiency and environmental performance. Our multidisciplinary team blends materials science, nanotechnology, and systems engineering to architect solutions that work at the interface of performance and sustainability. Our focus is on real industrial problems with measurable impact."
+        },
+        whatWeDo: {
+            title: "What We Do",
+            content: "We innovate and deliver nanomaterial additives that enhance fuel efficiency for coal, diesel, petrol, and engine oil systems, boost performance of protective and industrial coatings, improve process efficiency in bitumen applications, and enable advanced industrial water treatment and recycling. By leveraging nanoscale interactions, our technology improves energy conversion, reduces friction and losses, and unlocks efficiency improvements that translate into lower fuel consumption and reduced carbon emissions."
+        },
+        whyItMatters: {
+            title: "Why It Matters",
+            content: "The industrial sector remains one of the largest contributors to global carbon output. Incremental gains in efficiency can amount to major reductions in greenhouse gas emissions and operating costs. Grafillium’s innovations are engineered to lower energy consumption, reduce emissions intensity, extend asset life, and improve resource utilization. Our approach moves beyond incremental tweaks to deliver science-backed, scalable performance enhancements that align with both environmental stewardship and industrial productivity."
+        }
     },
     brands: {
         title: "Our Brands",
@@ -50,43 +50,43 @@ export const aboutContent = {
     },
     pillars: [
         {
-            title: "Technology Scouting & Partnerships",
-            description: "Bringing the best global innovations into the Indian and emerging market context.",
+            title: "Fuels & Combustion",
+            description: "Additives for coal, diesel, petrol, and engine oils.",
             points: [
-                "Collaborate with international research institutions",
-                "License and adapt frontier technologies",
-                "Build strategic partnerships with innovators worldwide",
-                "Localize solutions for Indian operating conditions"
+                "Improve energy conversion efficiency",
+                "Reduce friction and mechanical losses",
+                "Enable more complete combustion",
+                "Lower carbon emissions and footprint"
             ]
         },
         {
-            title: "Innovation Lab & R&D",
-            description: "Developing, testing, and scaling indigenous solutions to meet international performance standards.",
+            title: "Coatings & Fluids",
+            description: "Enhancing industrial fluids and protective surfaces.",
             points: [
-                "Advanced material science research",
-                "Combustion optimization technologies",
-                "Nano-catalytic formulations",
-                "Field testing and validation protocols"
+                "Thermal insulation paint additives",
+                "Fire-retardant material performance",
+                "Industrial fluid optimization",
+                "Surface modification at molecular level"
             ]
         },
         {
-            title: "Sustainability Consulting & Transformation",
-            description: "Helping industries cut costs, improve efficiency, and adopt greener practices.",
+            title: "Infrastructure & Bitumen",
+            description: "Smarter performance for construction materials.",
             points: [
-                "Energy efficiency audits",
-                "Emissions reduction strategies",
-                "Operational optimization consulting",
-                "Technology implementation support"
+                "Improve bitumen durability and lifespan",
+                "Reduce road maintenance intensity",
+                "Enhance construction material performance",
+                "Economic and environmental value bridge"
             ]
         },
         {
-            title: "New Materials Platform",
-            description: "Exploring and integrating advanced materials to transform energy storage, manufacturing, and infrastructure.",
+            title: "Water Treatment",
+            description: "Advanced recovery and recycling solutions.",
             points: [
-                "Next-generation conductivity materials",
-                "High-strength, durable composites",
-                "Thermal management solutions",
-                "Energy storage innovations"
+                "Industrial cooling water recovery",
+                "Paths for water reuse and recovery",
+                "pathogen and pathogen removal",
+                "Sustainable resource management"
             ]
         }
     ],
@@ -116,12 +116,12 @@ export const aboutContent = {
         }
     },
     vision: {
-        statement: "To deliver double-digit efficiency improvements in legacy fuel and industrial systems, while reducing the global carbon footprint by 10-15% in optimized deployments, thereby bridging the gap between today's infrastructure and tomorrow's clean economy.",
+        statement: "A future where industrial processes are more efficient, cleaner, and sustainable, driven by performance gains that deliver economic and environmental value simultaneously.",
         points: [
-            "Make existing systems dramatically more efficient",
-            "Cut emissions by 30-50% without infrastructure overhaul",
-            "Buy time for renewable energy to scale",
-            "Deliver immediate economic and environmental benefits"
+            "Bridge deep science with real industrial impact",
+            "Enable measurable reductions in energy intensity",
+            "Architect solutions for industrial scalability",
+            "Drive sustainability aligned with global objectives"
         ]
     },
     journey: [

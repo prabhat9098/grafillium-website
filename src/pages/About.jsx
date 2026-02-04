@@ -152,23 +152,27 @@ const About = () => {
                                             </div>
                                         </div>
 
-                                        <div className="lg:col-span-6">
-                                            <p className="text-lg text-stone-500 font-medium leading-relaxed">
-                                                {aboutContent.overview.description}
-                                            </p>
-                                        </div>
-                                        <div className="lg:col-span-6 bg-stone-50 p-8 border border-stone-200">
-                                            <h3 className="text-xs font-bold uppercase tracking-widest mb-6">Strategic Focus</h3>
-                                            <ul className="space-y-4">
-                                                {aboutContent.overview.focusItems.map((item, idx) => (
-                                                    <li key={idx} className="flex items-start gap-4 text-base font-bold text-black group">
-                                                        <div className="mt-1 w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-500 transition-colors">
-                                                            <Check size={12} className="text-emerald-700 group-hover:text-white transition-colors" strokeWidth={4} />
-                                                        </div>
-                                                        {item}
-                                                    </li>
-                                                ))}
-                                            </ul>
+                                        <div className="lg:col-span-12 space-y-16">
+                                            <div>
+                                                <h3 className="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-4">{aboutContent.overview.whoWeAre.title}</h3>
+                                                <p className="text-xl text-stone-700 font-medium leading-relaxed max-w-4xl">
+                                                    {aboutContent.overview.whoWeAre.content}
+                                                </p>
+                                            </div>
+
+                                            <div>
+                                                <h3 className="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-4">{aboutContent.overview.whatWeDo.title}</h3>
+                                                <p className="text-xl text-stone-700 font-medium leading-relaxed max-w-4xl">
+                                                    {aboutContent.overview.whatWeDo.content}
+                                                </p>
+                                            </div>
+
+                                            <div>
+                                                <h3 className="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-4">{aboutContent.overview.whyItMatters.title}</h3>
+                                                <p className="text-xl text-stone-700 font-medium leading-relaxed max-w-4xl">
+                                                    {aboutContent.overview.whyItMatters.content}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 )}

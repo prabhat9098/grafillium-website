@@ -5,12 +5,8 @@ import ignitronPImage from '../assets/ignitron-p-landscape.png';
 
 export const productsHero = {
     title: "Products & Solutions",
-    tagline: "A visionary global impact initiative co-created with the Founders of Magppie & Sunrooof for better tomorrow",
-    quote: {
-        text: "Innovating today to inherit tomorrow's Earth.",
-        author: "Founders"
-    },
-    description: "Nano-engineered additives delivering 3-20% efficiency gains across power, transport, and industrial sectors. Zero infrastructure changes. Immediate impact."
+    tagline: "Nanotech powered performance for real industrial impact",
+    description: "Grafillium is a deeptech innovation company developing nanomaterial additive technologies that improve efficiency and reduce carbon emissions across fuels, coatings, water, and bitumen."
 };
 
 export const productsContent = [
