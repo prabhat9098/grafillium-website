@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Zap, Gauge, FlaskConical, Beaker, Layers, Filter, Building2, Ship, Construction, Droplet } from 'lucide-react';
+import { ArrowRight, Zap, Gauge, FlaskConical, Beaker, Layers, Construction, Building2, Ship, Droplet } from 'lucide-react';
 import { productsContent, productsHero } from '../data/products';
 
 const Products = () => {
@@ -17,9 +17,8 @@ const Products = () => {
         }
     }, [searchParams]);
 
-    // Get all products except pipeline (we'll show pipeline separately)
+    // Get all products except pipeline
     const mainProducts = productsContent.filter(p => p.id !== 'pipeline');
-    const pipelineProduct = productsContent.find(p => p.id === 'pipeline');
 
     // Filter products by brand
     const filteredProducts = activeFilter === 'all'
@@ -39,17 +38,6 @@ const Products = () => {
             case 'lubritron': return <FlaskConical size={24} />;
             case 'ignitron-p': return <Beaker size={24} />;
             default: return <Layers size={24} />;
-        }
-    };
-
-    const getPipelineIcon = (sector) => {
-        switch (sector) {
-            case 'Infrastructure': return <Construction size={20} />;
-            case 'Marine': return <Ship size={20} />;
-            case 'Power & Data': return <Droplet size={20} />;
-            case 'Coal Analysis':
-            case 'Coal Optimization': return <Zap size={20} />;
-            default: return <Building2 size={20} />;
         }
     };
 
@@ -230,83 +218,6 @@ const Products = () => {
 
                     </div>
                 </section>
-
-                {/* INNOVATION PIPELINE SECTION */}
-                {pipelineProduct && (
-                    <section className="py-20 px-6 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white">
-                        <div className="max-w-[1400px] mx-auto">
-
-                            <div className="mb-12">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
-                                    <div className="h-2 w-2 rounded-full bg-indigo-400 animate-pulse" />
-                                    Under Development
-                                </div>
-                                <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">
-                                    Innovation Pipeline
-                                </h2>
-                                <p className="text-xl text-white/70 max-w-3xl leading-relaxed">
-                                    {pipelineProduct.tabs.overview.what}
-                                </p>
-                            </div>
-
-                            {/* Pipeline Items Grid */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                {pipelineProduct.pipelineItems.map((item, idx) => (
-                                    <motion.div
-                                        key={idx}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.5, delay: idx * 0.1 }}
-                                        className="group p-6 bg-white/5 backdrop-blur-md border border-white/10 hover:border-indigo-400/50 hover:bg-white/10 transition-all duration-300 rounded-xl"
-                                    >
-                                        <div className="flex items-start justify-between mb-4">
-                                            <div className="p-2 bg-white/10 text-white rounded-lg group-hover:bg-indigo-500/30 transition-colors">
-                                                {getPipelineIcon(item.sector)}
-                                            </div>
-                                            <span className={`px-2 py-1 text-[9px] font-bold uppercase tracking-widest rounded-full ${item.brand?.includes('Nexerg')
-                                                ? 'bg-blue-500/20 text-blue-300'
-                                                : 'bg-teal-500/20 text-teal-300'
-                                                }`}>
-                                                {item.brand}
-                                            </span>
-                                        </div>
-
-                                        <h3 className="text-xl font-bold mb-2 text-white">
-                                            {item.name}
-                                        </h3>
-
-                                        <div className="flex items-center gap-2 mb-4">
-                                            <span className="text-xs font-mono text-indigo-300">{item.status}</span>
-                                            <span className="text-white/30">•</span>
-                                            <span className="text-xs text-white/50">{item.sector}</span>
-                                        </div>
-
-                                        {item.oneLine && (
-                                            <p className="text-sm font-bold text-white mb-3">
-                                                {item.oneLine}
-                                            </p>
-                                        )}
-
-                                        <p className="text-sm text-white/70 leading-relaxed line-clamp-4">
-                                            {item.text}
-                                        </p>
-                                    </motion.div>
-                                ))}
-                            </div>
-
-                            {/* View Pipeline Details */}
-                            <div className="mt-12 text-center">
-                                <Link
-                                    to="/products/pipeline"
-                                    className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-indigo-400 hover:text-white transition-all rounded-lg"
-                                >
-                                    View Full Pipeline Details <ArrowRight size={18} />
-                                </Link>
-                            </div>
-
-                        </div>
-                    </section>
-                )}
 
                 {/* CTA SECTION */}
                 <section className="py-24 px-6 bg-gradient-to-b from-white via-slate-50 to-white relative overflow-hidden">
